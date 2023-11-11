@@ -1,0 +1,129 @@
+.home{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-evenly; */
+  gap: 30px;
+}
+
+.home_1{
+    width: 200px;
+    height: fit-content;
+    padding: 10px 0;
+    margin: 10px ;
+    display: grid;
+    place-items: center;
+    border: 1px solid grey;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.54);
+}
+
+.home_1 >button {
+    border: 1px solid grey;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: white;
+  /* box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.54); */
+}
+
+.home_1 >button:active{
+    background: linear-gradient(to right, #f0f0f0, #333);
+    
+}
+
+.home_2{
+    width:  fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+.home_2 > .home_2_container{
+    width:  fit-content;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.home_2>.home_2_container >div {
+    width: 320px;
+    height: 100px;
+    padding: 10px 0;
+    margin: 10px ;
+    display: grid;
+    place-items: center;
+    border: 1px solid grey;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgba(211, 209, 209, 0.26);
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.54);
+}
+
+.showAllTransaction{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+ /* width: 100%;
+ height: 100%; */
+ overflow-y:auto;
+ padding: 0 30px 0 0;
+}
+
+.showAllTransaction::-webkit-scrollbar{
+  display: none;
+ }
+
+table{
+  width: 100%;
+  height: 100%;
+  border: 1px solid grey;
+  text-align: center;
+  overflow-y: scroll;
+  
+}
+
+
+tr{
+  width: 100%;
+  height: 20px;
+}
+
+table >thead >tr>th{
+  width: fit-content;
+  height: 2 0px;
+  border: 1px solid grey;
+}
+table >tbody >tr>td{
+  width: fit-content;
+  height: fit-content;
+padding: 0;
+  border: 1px solid grey;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .home{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+      }
+
+      .home_2 >div {
+        width: 100%;
+      }
+}
